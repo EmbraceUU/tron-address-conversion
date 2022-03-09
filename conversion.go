@@ -1,4 +1,4 @@
-package tron_address_conversion
+package conversion
 
 import "github.com/ethereum/go-ethereum/common"
 

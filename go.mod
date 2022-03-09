@@ -1,4 +1,4 @@
-module tron-address-conversion
+module github.com/EmbraceUU/tron-address-conversion
 
 go 1.15
 

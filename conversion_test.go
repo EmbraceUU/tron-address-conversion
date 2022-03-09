@@ -1,4 +1,4 @@
-package tron_address_conversion
+package conversion
 
 import (
 	"strings"
@@ -7,14 +7,14 @@ import (
 
 func TestDefaultConversion(t *testing.T) {
 	cv := NewConversion()
-	baseAddr, err := cv.HexToBase58(strings.ToLower("0xa614f803B6FD780986A42c78Ec9c7f77e6DeD13C"))
+	baseAddr, err := cv.HexToBase58(strings.ToLower("0x0000000000000000000000000000000000000000"))
 	if err != nil {
 		t.Errorf(err.Error())
 	} else {
 		t.Log(baseAddr)
 	}
 
-	hexAddr, err := cv.Base58ToHex("TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t")
+	hexAddr, err := cv.Base58ToHex("T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb")
 	if err != nil {
 		t.Error(err.Error())
 	} else {
